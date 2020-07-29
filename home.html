@@ -159,25 +159,8 @@
     <script src="assets/js/jquery.min_1.12.4.js"></script>
     <script src="assets/js/modernizr-custom.js"></script>
     <script src="assets/js/swiper.min.js"></script>
-<!--    <script src="assets/js/custom.js"></script>-->
+    <script src="assets/js/custom.js"></script>
     <script>
-        // loading
-        $(window).load(function(){
-            $("#loading").hide();
-            $("body").removeClass("noScroll");
-        });
-        
-        // side-nav
-        $("#header .ham").click(function(e){
-            e.preventDefault();
-            $("#side-nav .side-nav").animate({'left': '0'}, 300);
-            $("#side-nav .backdrop").addClass("on");
-        });
-        $("#side-nav .backdrop").click(function(){
-            $("#side-nav .side-nav").animate({'left': '-100%'}, 300);
-            $(this).removeClass("on");
-        });
-        
         // order slide
         var mySwiper = new Swiper('.Morder-container', {
             slidesPerView: 3.5,
