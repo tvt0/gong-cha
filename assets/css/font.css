@@ -1,0 +1,26 @@
+/* fonts */
+@font-face {
+    font-family: "SF Pro Text";
+    font-weight: 300;
+    src: local('SF Pro Text Light'), url('../fonts/SF-Pro-Text-Light.otf') format('otf');
+}
+@font-face {
+    font-family: "SF Pro Text";
+    font-weight: 400;
+    src: local('SF Pro Text Regular'), url('../fonts/SF-Pro-Text-Regular.otf') format('otf');
+}
+@font-face {
+    font-family: "SF Pro Text";
+    font-weight: 500;
+    src: local('SF Pro Text Medium'), url('../fonts/SF-Pro-Text-Medium.otf') format('otf');
+}
+@font-face {
+    font-family: "SF Pro Text";
+    font-weight: 600;
+    src: local('SF Pro Text Semibold'), url('../fonts/SF-Pro-Text-Semibold.otf') format('otf');
+}
+@font-face {
+    font-family: "SF Pro Text";
+    font-weight: 700;
+    src: local('SF Pro Text Bold'), url('../fonts/SF-Pro-Text-Bold.otf') format('otf');
+}

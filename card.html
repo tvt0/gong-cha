@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="tvt">
+    <meta name="description" content="포트폴리오를 위한 공차 멤버십 어플 리뉴얼">
+    <meta name="keywords" content="공차, 모바일 앱, 어플">
+    <title>CARD - GongCha</title>
+    
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="assets/favicon/favicon_72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="96x96" href="assets/favicon/favicon_96.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/favicon/favicon_144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="192x192" href="assets/favicon/favicon_192.png">
+    
+    
+</head>
+<body class="noScroll">
+   <!-- loading -->
+    <div id="loading">
+        <div class="loading">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+        </div>
+        <div class="loading2">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+        </div>
+    </div>
+    <!-- //loading -->
+    
+    <!-- header -->
+    <header id="header">
+        <a href="#" class="icon ham ir_pm">ham</a>
+        <a href="#" class="heading1">멤버십 카드</a>
+        <a href="#" class="icon add ir_pm">add</a>
+    </header>
+    <!-- //header -->
+    
+    <!-- side-nav -->
+    <nav id="side-nav">
+        <div class="side-nav">
+            <div class="info">
+                <img src="assets/img/profile.png" srcset="assets/img/profile@2.png 2x" alt="profile image">
+                <span><em class="heading2">김공차</em> 님</span>
+                <a href="#"><span class="icon setting ir_pm">setting</span></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">회원혜택</a></li>
+                    <li><a href="#">스탬프 카드</a></li>
+                    <li><a href="#">쿠폰 &amp; e-Gift</a></li>
+                    <li><a href="#">멤버십 카드</a></li>
+                    <li><a href="#">멤버십 오더</a></li>
+                    <li><a href="#">선물하기</a></li>
+                    <li><a href="#">주문내역</a></li>
+                    <li><a href="#">즐겨찾기</a></li>
+                    <li><a href="#">이벤트 &amp; 뉴스</a></li>
+                    <li><a href="#">알림</a></li>
+                    <li><a href="#">매장찾기</a></li>
+                    <li><a href="#">이용안내</a></li>
+                </ul>
+            </div>
+            <div class="sns">
+                <a href="#"><span class="icon insta ir_pm">instagram</span></a>
+                <a href="#"><span class="icon facebook ir_pm">facebook</span></a>
+            </div>
+        </div>
+        <div class="backdrop"></div>
+    </nav>
+    <!-- //side-nav -->
+    
+    <section id="contents" class="card">
+        <!-- card-title -->
+        <div class="card-title">
+            <h1 class="heading3">나의 카드 (1/1)</h1>
+            <p>카드 상단의 ★을 선택하여 대표카드를 설정하세요.</p>
+        </div>
+        <!-- //card-title -->
+
+        <!-- mycard -->
+        <div class="mycard">
+            <div class="card-graphic">
+                <div class="top">
+                    <h2 class="heading2">membership card</h2>
+                    <span class="icon star ir_pm">star</span>
+                </div>
+                <div class="bottom">
+                    <h2 class="heading2">잔액</h2>
+                    <span class="heading2"><em>20,000</em>원</span>
+                </div>
+            </div>
+            <div class="barcode">
+                <a href="#">
+                    <img src="assets/img/barcode_m.png" srcset="assets/img/barcode_m@2.png 2x" alt="barcode">
+                    <p>2499 4952 1975 5979</p>
+                    <span class="icon arrow_red ir_pm">arrow</span>
+                </a>
+            </div>
+            <div class="dot"></div>
+        </div>
+        <!-- //mycard -->
+        
+        <!-- card-btn -->
+        <div class="card-btn heading3">
+            <a href="#">자동충전/해지</a>
+            <a href="#">일반충전</a>
+            <a href="#">카드관리</a>
+            <a href="#">분실신고</a>
+        </div>
+        <!-- //card-btn -->
+    </section>
+
+    <!-- footer -->
+    <footer id="footer">
+        <ul class="heading4">
+            <li><a href="home.html"><span class="icon home"></span>home</a></li>
+            <li><a href="order.html"><span class="icon order"></span>order</a></li>
+            <li><a href="gift.html"><span class="icon gift"></span>gift</a></li>
+            <li class="active"><a href="card.html"><span class="icon card"></span>card</a></li>
+        </ul>
+    </footer>
+    <!-- //footer -->
+
+    <!-- barcode -->
+    <div id="barcode">
+        <img src="assets/img/barcode_l.png" srcset="assets/img/barcode_l@2.png" alt="barcode">
+        <a href=""><span class="icon close ir_pm">close</span></a>
+    </div>
+    <!-- //barcode -->
+
+    <script src="assets/js/jquery.min_1.12.4.js"></script>
+    <script src="assets/js/modernizr-custom.js"></script>
+<!--    <script src="assets/js/custom.js"></script>-->
+    <script>
+        // loading
+        $(window).load(function(){
+            $("#loading").hide();
+            $("body").removeClass("noScroll");
+        });
+        
+        // side-nav
+        $("#header .ham").click(function(e){
+            e.preventDefault();
+            $("#side-nav .side-nav").animate({'left': '0'}, 300);
+            $("#side-nav .backdrop").addClass("on");
+        });
+        $("#side-nav .backdrop").click(function(){
+            $("#side-nav .side-nav").animate({'left': '-100%'}, 300);
+            $(this).removeClass("on");
+        });
+        
+        // barcode modal 
+        $(".barcode").click(function(e){
+            e.preventDefault();
+            $("html, body").addClass("noScroll");
+            $("#barcode").animate({'top': '0'}, 300);
+        });
+        $("#barcode .close").click(function(e){
+            e.preventDefault();
+            $("html, body").removeClass("noScroll");
+            $("#barcode").animate({'top': '100%'}, 300);
+        });
+    </script>
+</body>
+
+</html>
