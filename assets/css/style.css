@@ -371,8 +371,7 @@
 
 
 
-
-/* media query */
+/* ----------------- media query ----------------- */
 @media (max-width: 320px) {
     #side-nav .side-nav .info {padding: 25px 30px;}
     #side-nav .side-nav .info img {margin-right: 12px;}
